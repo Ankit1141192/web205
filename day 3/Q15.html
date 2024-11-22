@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        header {
+            background-color: darkgoldenrod;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            color: navy;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+        }
+        
+        nav p {
+            cursor: pointer;
+        }
+        img{
+            height: 200px;
+            border-radius: 15px;
+        }
+        footer{
+            background-color: darkgoldenrod;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <p>About</p>
+            <p>Projects</p>
+            <p>Contact</p>
+        </nav>
+    </header>
+    <section>
+        <h2>About me</h2>
+        <p>Hi , I am Ankit Kumar.I am living from kanpur.I have completed my graduation from CSJMU University.Currently,I am study at Masai and Enroll fullstack course</p>
+        <img src="./Ankit 1.png" alt="My Photo">
+        <h2>Projects</h2>
+        <img src="./project1.png" alt="diwali project">
+
+        <h3>Contact</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message " rows="4"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <h2> ❤️Copyright © 2024</h2>
+    </footer>
+</body>
+</html>
