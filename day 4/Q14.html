@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button [data-type = "primary"]{
+            background-color: rgb(120, 198, 108);
+            height: 30px;
+            width: 60px;
+            border: none;
+            border-radius: 10px;
+        }
+        button[data-type="primary"].cta{
+            font-weight: bold;
+            background-color: rgb(108, 108, 132);
+            height: 30px;
+            width: 60px;
+            border: none;
+            border-radius: 10px;
+        }
+        /* button[data-type="primary"].cta: This selector has increased specificity and applies to buttons that both have data-type="primary" and the cta class.
+         It ensures that the button gets both the correct background color and the bold text. */
+    </style>
+</head>
+<body>
+    <button data-type="primary" class = "cta"> hello</button>
+</body>
+</html>

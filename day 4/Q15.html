@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        nav {
+            background:linear-gradient(pink,blue,rgb(153, 144, 127));
+            padding: 10px;
+        }
+        section {
+            margin: 10px;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 5px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #5e5d5d;
+            color: #ffffff;
+        }
+        nav a:active {
+            background-color: #777777;
+        }
+        section a {
+            color: #e9e9e9;
+        }
+        section > a {
+            font-weight: bold;
+            color: #ff6347; 
+        }
+        section#section1 a {
+            color: #ff6347;
+        }
+        section#section2 a {
+            color: white; 
+        }
+        section#section3 a {
+            color: #32CD32; 
+        }
+        section#section1 a:hover {
+            background-color: #ff4500;
+        }
+        section#section2 a:hover {
+            background-color: #1e90ff;
+        }
+        section#section3 a:hover {
+            background-color: #228b22;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <section id="section1">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </section>
+        <section id="section2">
+            <a href="https://astounding-longma-0a949c.netlify.app/contact">Contact</a>
+            <a href="#">Support</a>
+            <a href="#">FAQ</a>
+        </section>
+        <section id="section3">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Link 1</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id">Link 2</a>
+            <a href="https://developer.mozilla.org">Local Link</a>
+        </section>
+    </nav>
+
+</body>
+</html>
