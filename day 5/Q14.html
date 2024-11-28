@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .header {
+      background: linear-gradient(pink,navy,black);
+      padding: 40px;
+      text-align: center;
+      color: yellowgreen;
+
+    }
+    .footer {
+        background-color:black;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        margin-top: 350px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 100px 0;
+    }
+    .content, .sidebar {
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    .content {
+      flex: 3;
+      background-color: pink;
+    }
+    .sidebar {
+      flex: 1;
+      background-color: navy;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header"><h1>This is the header</h1></div>
+  <div class="container">
+    <div class="content">1</div>
+    <div class="sidebar">2</div>
+  </div>
+  <div class="footer">Copyright © 2024 TermsFeed <sup>®</sup>. All rights reserved.</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-gallery</title>
+    <style>
+        body{
+            background-color: rgb(22, 21, 21);  
+        }
+        #container{
+            margin: 2%;
+            height: 600px;
+            width: 800px;
+            border-radius: 20px;
+            border: 1px solid whitesmoke;
+            background-color: rgb(22, 21, 21); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+        }
+        #cont1{
+            height: 220px;
+            width: 350px;
+            margin-top: 30px;
+            margin-left: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border-radius: 20px;
+            border: 1px solid whitesmoke;
+            background-color: rgb(22, 21, 21); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #cont1>div{
+            height: 70px;
+            width: 70px;
+            margin-top: 30px;
+            margin-left: 20px;
+            border-radius: 50%;
+            border: 1px solid whitesmoke;
+            background-color: rgb(22, 21, 21); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #cont{
+            height: 220px;
+            width: 350px;
+            margin-top: 100px;
+            margin-left: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border-radius: 20px;
+            border: 1px solid whitesmoke;
+            background-color: rgb(22, 21, 21); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #cont>div{
+            height: 70px;
+            width: 70px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            border: 1px solid whitesmoke;
+            background-color: rgb(22, 21, 21); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #cont2{
+            height: 550px;
+            width: 300px;
+            margin-top: 30px;
+            margin-right: 30px;
+            border-radius: 20px;
+            border: 1px solid whitesmoke;
+            background-color: rgb(22, 21, 21); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #cont2>div{
+            height: 100px;
+            margin-top: 30px;
+            margin-right: 20px;
+            border-radius: 20px;
+            margin-left: 20px;
+            border: 1px solid whitesmoke;
+            background-color: rgb(22, 21, 21); 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #cont2 img{
+           width: 258px;
+           border-radius: 20px;
+           height: 100px;
+        }
+        #cont1 img{
+           height: 70px;
+           width: 70px;
+           border-radius: 50px;
+        }
+        #cont img{
+           height: 70px;
+           width: 70px;
+           border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id ="container1">
+            <div id="cont1">
+                <div><img src="https://fastly.picsum.photos/id/198/200/200.jpg?hmac=3UdulfE9DTCNBECOusB2ignsI8T-XhkGI-M0P2BMJm8" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/788/200/200.jpg?hmac=ECykjkngzBhLGOjhU-UYPGXXjL8Ba8VPX3S_xid4T-k" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/229/200/200.jpg?hmac=b3V9uXS2Q1EA1tLHxvWjTgBF4TphN4ibxTjDv2PO2jg" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/395/200/200.jpg?hmac=wwuALTmMrTRCklDqZ8tkCheruznT4KWlx3IlRc0ISts" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/182/200/200.jpg?hmac=MkR-XEPoojVUql6ALw3mXJhEU63027NZxRXsRqavT24" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/85/200/200.jpg?hmac=gQRdT-HPw1azaNf38WLW_QZv7aC0WjwOSM4Sf5kWm3U" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/882/200/200.jpg?hmac=cVjON67mkFjmhVFCS4lYVS-iFp1D3KP-khmMizQxxhQ" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/25/200/200.jpg?hmac=G4ZRBi0qdWfQJQs_yxNQr_LJJlf0V1_Pdj8Tp41xsJU" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/1068/200/200.jpg?hmac=fZthgo1dc9rYSPL0GF4oEqYm2dpTII6Dz2J06qYNqGw" alt=""></div>
+            </div>
+            <div id="cont">
+                <div><img src="https://fastly.picsum.photos/id/931/200/200.jpg?hmac=htOesDJIBiVYN2fj1J6jQqQC-qu81A24bW_tcpe5Hxg" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/755/200/200.jpg?hmac=fgsDUz8GLl3UPtHhHlMIabU9V8LhbOPCwYGzrrn6CyU" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/825/200/200.jpg?hmac=Rpa0BK5LjdGtlClC7IBAfyqXkR8ivGiARYDUmgpjZ3w" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/219/200/200.jpg?hmac=A55nsncpsnDAEPuZjs3_12i2n8HJNZ5-1SVCIN2fAgc" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/291/200/200.jpg?hmac=g1_gMJjGOhuKcjI43ybRbxQ8axXnS05ICBsEa4Lcaw0" alt=""></div>
+                <div><img src="https://fastly.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0" alt=""></div>
+            </div>
+        </div>
+        
+        <div id="cont2">
+            <div><img src="https://fastly.picsum.photos/id/272/200/300.jpg?hmac=QjLWH4UZZJnyhE7WasPSxZtf4bnA8f4bsbtK2R4m3Ws" alt=""></div>
+            <div><img src="https://fastly.picsum.photos/id/733/200/300.jpg?hmac=JYkTVVdGOo8BnLPxu1zWliHFvwXKurY-uTov5YiuX2s" alt=""></div>
+            <div><img src="https://fastly.picsum.photos/id/683/200/300.jpg?hmac=LalV5DeTpQsFRVpqJKk0lZ_zRqag95TYBrqTW06L9yw" alt=""></div>
+            <div><img src="https://fastly.picsum.photos/id/449/200/300.jpg?hmac=AswURfv1K7eMpuBVd_fnQVIDJrSBQeNmhwj13ofwljM" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

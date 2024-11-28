@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Block Element */
+        #block-element {
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #ffebcd;
+            border: 1px solid #8b4513;
+            border-radius: 5px;
+        }
+
+        /* Inline Element */
+        #inline-element {
+            display: inline;
+            padding: 5px;
+            background-color: #d1f0ff;
+            border: 1px solid #0096ff;
+            border-radius: 5px;
+            color: #005577;
+            margin: 10px;
+        }
+
+        /* Inline-Block Element */
+        #inline-block-element {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: #c6ffb3;
+            border-radius: 5px;
+            border: 2px dashed #006600;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Hidden Element */
+        #hidden-element {
+            display: none;
+            padding: 15px;
+            background-color: #ffcccc;
+            border-radius: 5px;
+            border: 2px solid #ff0000;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Display Property Demonstration</h1>
+
+    <div id="block-element">This is a block element</div>
+    <span id="inline-element">Inline element</span>
+    <div id="inline-block-element">Inline-block element</div>
+    <div id="hidden-element">This element is initially hidden</div>
+</body>
+</html>

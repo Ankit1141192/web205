@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card layout with CSS Grid</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        #container>div{
+            height: 350px;
+            width: auto;
+            justify-content: space-around;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+         /* Tablet: 2 columns */
+         @media (max-width: 768px) {
+            #container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile: 1 column */
+        @media (max-width: 480px) {
+            #container {
+                grid-template-columns: 1fr;
+            }
+        }
+        img{
+            justify-content: center;
+            margin-left: 20%;
+            height: 200px;
+        }
+        #container>div p{
+            justify-content: space-around;
+            margin: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #container>div p span{
+            color: red;
+            gap: 5px;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41umTKqeziL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+            <p>boAt Airdopes 141 Bluetooth Truly Wireless in Ear Ear Buds w/ 45H Playtime,Low Latency Mode for Gaming, ENx Tech, IWP, IPX4 Water Resistance, Smooth Touch Controls(Bold Black)</p>
+            <p>Price:<span>-76% </span><sup>₹</sup>1,099</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41VsmkhaaKL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+            <p>boAt Nirvana Ion Truly Wireless in Ear Ear Buds w/ 120 HRS Playback,Crystal Bionic Sound w/Dual EQ Modes, 4 Mics ENx™ Technology, in Ear Detection, Hearables App, IPX4 Ear Buds TWS (Charcoal Black)</p>
+            <p>Price:<span>-79% </span><sup>₹</sup>1,698</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/51FNnHjzhQL._SX522_.jpg" alt="">
+            <p>boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Luscious Black)</p>
+            <p>Price:<span>-62% </span><sup>₹</sup>1,499</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41qzxIKrWkL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+            <p>Boult Audio Z40 True Wireless in Ear Earbuds with 60H Playtime, Zen™ ENC Mic, Low Latency Gaming, Type-C Fast Charging, Made in India, 10mm Rich Bass Drivers, IPX5, Bluetooth 5.3 Ear Buds TWS (White)</p>
+            <p>Price:<span>-76% </span><sup>₹</sup>1,199</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41vawVq5mFL._SY445_SX342_QL70_FMwebp_.jpg" alt="">
+            <p>Divine Trends Diamond Cut Glass LED, Incandescant, CFL, Smart Bulbs Table Lamp Brass Antique Finish 19 Inches Height Off White 12 Inches Lamp Shade Pack Of 1</p>
+            <p>Price:<span>-30% </span><sup>₹</sup>3,850</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41024ttcJAL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+            <p>Orient Electric Areva Portable Room Heater | 2000W | Two Heating Modes | Advanced Overheat Protection | Horizontal & Vertical Mount | 1-year replacement warranty by Orient | White</p>
+            <p>Price:<span>-60% </span><sup>₹</sup>1499</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41sXFsE+OcL._SY300_SX300_.jpg" alt="">
+            <p>Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display</p>
+            <p>Price:<span>-35% </span><sup>₹</sup>9,098</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41hmUyFtwdL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+            <p>iQOO Z9 Lite 5G (Mocha Brown, 6GB RAM, 128GB Storage) | Dimensity 6300 5G | 50MP Sony AI Camera | Charger in The Box</p>
+            <p>Price:<span>-26% </span><sup>₹</sup>11,498</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
