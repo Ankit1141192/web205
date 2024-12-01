@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .card-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .card-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Medium screens (600px to 1024px) */
+    @media (min-width: 600px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Large screens (more than 1024px) */
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Card Image 1">
+      <h2 class="card-title">Vijay Shekhar Sharma</h2>
+      <p class="card-description">Founder & CEO</p>
+      <a href="https://www.forbes.com/profile/vijay-shekhar-sharma/" class="card-button">Read More</a>
+    </div>
+
+    <div class="card">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="Card Image 2">
+      <h2 class="card-title">Kunal Shah</h2>
+      <p class="card-description">Founder</p>
+      <a href="https://en.wikipedia.org/wiki/Kunal_Shah" class="card-button">Read More</a>
+    </div>
+
+    <div class="card">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="Card Image 3">
+      <h2 class="card-title">Amrish Rau</h2>
+      <p class="card-description">CEO</p>
+      <a href="https://yournest.in/teams/amrish-rau/" class="card-button">Read More</a>
+    </div>
+
+    <div class="card">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="Card Image 4">
+      <h2 class="card-title">Sampad Swain</h2>
+      <p class="card-description">Co-Founder & CEO</p>
+      <a href="https://www.instamojo.com/blog/author/sampad/" class="card-button">Read More</a>
+    </div>
+  </div>
+
+</body>
+</html>

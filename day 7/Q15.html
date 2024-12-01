@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout with Gradients</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            grid-template-rows: repeat(3, 200px);
+            gap: 10px;
+            margin-left: 10%;
+            margin-right:10%;
+            margin-top: 40px;
+        }
+        .container>div:first-child{
+            background: linear-gradient(rgb(209, 56, 56),rgb(240, 185, 194),rgb(209, 56, 56));
+        }
+        .container>div:nth-child(2){
+            background:linear-gradient(skyblue,rgb(248, 243, 243),skyblue);
+        }
+        .container>div:nth-child(3){
+              background:linear-gradient(pink,green,pink) ;
+        }
+        .container>div:nth-child(4){
+            background:linear-gradient(rgb(209, 56, 56),gold,rgb(209, 56, 56)) ;
+        }
+        .container>div:nth-child(5){
+            background: linear-gradient(rgb(209, 56, 56),pink,rgb(209, 56, 56));
+        }
+        .container>div:nth-child(6){
+            background:linear-gradient(skyblue,rgb(248, 243, 243),skyblue);
+        }
+        .container > div:nth-child(7) {
+            grid-column: 1 / span 3;
+            background: linear-gradient(yellow,pink,navy);
+        }
+        .container > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(22, 19, 19);
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+</body>
+</html>

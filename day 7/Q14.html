@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Grid Layout Issues</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 100px 100px;
+        }
+
+        .item1 {
+            grid-column: 1;
+            grid-row: 1 / 2;
+        }
+
+        .item2 {
+            grid-column: 2 /span 2; /* Bug here */
+            grid-row: 2;
+        }
+
+        .item3 {
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+      </div>
+      
+</body>
+</html>

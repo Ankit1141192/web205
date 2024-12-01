@@ -1,0 +1,90 @@
+#group{
+    display: flex;
+    gap: 46px;
+}
+#table {
+    display: flex;
+    gap: 5px;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+#s-block {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 81px;
+    margin-top: 30px;
+  
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#s-block > div {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid black;
+}
+#p-block {
+    display: grid;
+    gap: 5px;
+    margin-top: 95px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 50px; /* Ensures consistent row height */
+}
+
+#p-block > div {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+#d-block{
+    display: grid;
+    gap: 5px;
+     margin-bottom: 25px;
+    margin-top: 202px;
+    margin-left: 10px;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+#d-block>div{
+    height: 50px;
+    width: 50px;
+    background-color: skyblue;
+    border: 1px solid black;
+}
+#f-block > div {
+    height: 50px;
+    background-color: yellowgreen;
+    width: 50px;
+    border: 1px solid black;
+}
+#f-block{
+    display: grid;
+    gap: 5px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 40%;
+    grid-template-columns: repeat(14,1fr);
+}
+#e2{
+    justify-content: flex-end;
+    margin-left: 1775%;
+}
+
+#s-block>div h2{
+    text-align: center;
+    margin-top: -1px;
+}
+#p-block>div h2{
+    text-align: center;
+    margin-top: -1px;
+}
+#d-block>div h2{
+    text-align: center;
+    margin-top: -1px;
+}
+#f-block>div h2{
+    text-align: center;
+    margin-top: -1px;
+}

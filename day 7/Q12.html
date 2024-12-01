@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align item in grid</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px;
+            place-items: center;
+        }
+        .container > div {
+            height: 200px;
+            width: 300px;
+            border-radius: 20px;
+            background: radial-gradient(circle, rgba(66, 75, 119, 1) 29%, rgba(99, 104, 166, 1) 38%, rgba(42, 21, 25, 1) 74%, rgba(221, 44, 77, 1) 91%);
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            font-size: 32px; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

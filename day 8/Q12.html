@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        .container > div {
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .container>div p{
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 10px;
+            margin-top: 30px;
+            height: 1.5;
+            text-justify: newspaper;
+        }
+        @media all and (min-width: 300px) and (max-width: 768px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            .container>div p{
+                font-size: 16px;
+                height: 1.5;
+            }
+        }
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            .container>div p{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusamus earum blanditiis alias ea error consequatur facilis odit, sapiente sit magni nisi asperiores aperiam perferendis voluptate enim libero? Et, ipsum!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi, repellat mollitia cumque natus iste ea fugit quia. Dicta, aliquam distinctio? Fugit explicabo dolore praesentium voluptatibus dicta numquam natus quo.</p>
+        </div>
+        <div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officia. Fugit praesentium saepe odit voluptas officia voluptates beatae natus enim ipsam ut aut accusantium corrupti provident, nam commodi! Aut, ab.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, aspernatur quibusdam aut perspiciatis animi vel dolor amet! Fuga voluptatem obcaecati aperiam, amet quam asperiores iste eos. Inventore illo ullam ipsum.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, voluptas quam veritatis at est eum facere modi, dicta ipsa error numquam alias molestiae, quae quisquam? Odio, fugit! Voluptas, suscipit sed.</p>
+        </div>
+        <div>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas distinctio explicabo ipsum alias sit exercitationem dolore obcaecati nesciunt soluta amet asperiores, id provident, corrupti eos quae? Quos totam sed recusandae?</p>
+        </div>
+       
+    </div>
+</body>
+</html>
