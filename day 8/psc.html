@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./psc.css">
+</head>
+
+<body>
+    <div class="controls">
+        <label for="bloodGroupFilter">filter by blood group</label>
+        <select id="bloodGroupFilter">
+            <option value="">All</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        <label for="searchQuery">Search</label>
+        <input type="text" id="searchQuery" placeholder="Search By name">
+
+    </div>
+    <table id="userTable">
+        <thead>
+            <tr>
+<th>Name</th>
+<th>Gender</th>
+<th>Blood Group</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="pagination">
+        <button id="prevButton">Previous</button>
+        <span id="pageNumber">Page 1</span>
+        <button id="nextButton">Next</button>
+    </div>
+   <p id="errorMessage"></p>
+</body>
+</html>
+<script src="./script.js"></script>
