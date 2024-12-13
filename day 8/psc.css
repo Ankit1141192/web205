@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+table,th,td{
+    border: 1px solid black;
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+}
+
+.pagination{
+margin-top: 20px;
+}
+.pagination button{
+margin: 0 10px;
+}
+
+.controls{
+margin-bottom: 20px;
+}
